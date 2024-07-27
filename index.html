@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .content{
+            width: 8rem;
+            height: 4rem;
+            background-color: red;
+        }
+
+        input[value="tim" i] ~ #result:before {
+            content: "Tim Carry";
+        }
+
+
+                /* Pre-fill the content */
+        #result0:before { content: "Simran" }
+       
+        #result1:before { content: "Simon" }
+        #result2:before { content: "Ross Geller " }
+        #result3:before { content: "Monika Geller" }
+        
+        #result4:before { content: "Simran Kour" }
+  
+        /* // Hide them all */
+        #results div { display: none }
+
+        input[value="s" i] ~ #results #result0,
+        input[value="si" i] ~ #results #result0,
+        input[value="sim" i] ~ #results #result0,
+        input[value="simr" i] ~ #results #result0,
+        input[value="simra" i] ~ #results #result0,
+        input[value="simran" i] ~ #results #result0,
+
+        input[value="s" i] ~ #results #result4,
+        input[value="si" i] ~ #results #result4,
+        input[value="sim" i] ~ #results #result4,
+        input[value="simr" i] ~ #results #result4,
+        input[value="simra" i] ~ #results #result4,
+        input[value="simran" i] ~ #results #result4,
+
+        input[value="s" i] ~ #results #result1,
+        input[value="si" i] ~ #results #result1,
+        input[value="sim" i] ~ #results #result1,
+        input[value="simo" i] ~ #results #result1,
+        input[value="Simon" i] ~ #results #result1,
+
+        input[value="g" i] ~ #results #result2,
+        input[value="ge" i] ~ #results #result2,
+        input[value="gel" i] ~ #results #result2,
+        input[value="gell" i] ~ #results #result2,
+        input[value="gelle" i] ~ #results #result2,
+        input[value="geller" i] ~ #results #result2,
+        input[value="g" i] ~ #results #result3,
+        input[value="ge" i] ~ #results #result3,
+        input[value="gel" i] ~ #results #result3,
+        input[value="gell" i] ~ #results #result3,
+        input[value="gelle" i] ~ #results #result3,
+        input[value="geller" i] ~ #results #result3
+       
+        {
+        display: block
+        }
+    </style>
+</head>
+<body>
+    <input type="search" value=""
+        oninput="this.setAttribute('value', this.value)"/>
+    <div id="results">
+        <div class="content" id="result0">hi</div>
+        <div class="content" id="result1"></div>
+        <div class="content" id="result2"></div>
+        <div class="content" id="result3"></div>
+        <div class="content" id="result4"></div>
+        <div class="content" id="result5"></div>
+    </div>
+          
+</body>
+</html>
